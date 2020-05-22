@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FillWords.FWAlg">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAAACAAAQACAAAAAAAAAAAAAQhEAAAAAAAAAAqRAI=</HashCode>
+      <FileName>FWAlg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FillWords.GameForm">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="FillWords.Properties.Resources" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="12.161" />
+        <Point X="6" Y="14.181" />
+        <Point X="4.815" Y="14.181" Type="JumpStart" />
+        <Point X="4.648" Y="14.181" Type="JumpEnd" />
+        <Point X="2.375" Y="14.181" />
+        <Point X="2.375" Y="13.688" />
+        <Point X="2" Y="13.688" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="FWAlg" Type="FillWords.FWAlg" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="8.188" />
+        <Point X="4.648" Y="8.187" Type="JumpStart" />
+        <Point X="4.958" Y="8.188" Type="JumpEnd" />
+        <Point X="5.045" Y="8.188" />
+        <Point X="5.045" Y="1.625" />
+        <Point X="5.25" Y="1.625" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.271" Y="-6.66" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Resources" Type="FillWords.Resources" ManuallyRouted="true">
+      <Path>
+        <Point X="1.25" Y="0.5" />
+        <Point X="1.25" Y="0.181" />
+        <Point X="7.594" Y="0.181" />
+        <Point X="7.594" Y="0.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.422" Y="0.847" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Mode" Type="FillWords.Mode">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="-0.093" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>FDAAAAKMIKFCEUBHAGCDhAVfBawgAB0BAPgAYRBKJQA=</HashCode>
+      <FileName>GameForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FWAlg" />
+      <Property Name="Images" />
+      <Property Name="Resources" />
+      <Property Name="Mode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FillWords.Images">
+    <Position X="2.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAwEEEAAAAAAEAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FillWords.MainMenuForm">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="GameForm1" Type="FillWords.GameForm" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="3.625" />
+        <Point X="4.732" Y="3.625" />
+        <Point X="4.732" Y="14.625" />
+        <Point X="2" Y="14.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Resources" Type="FillWords.Resources" ManuallyRouted="true">
+      <Path>
+        <Point X="3.5" Y="0.5" />
+        <Point X="3.5" Y="0.262" />
+        <Point X="8" Y="0.262" />
+        <Point X="8" Y="0.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.996" Y="0.182" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Images" Type="FillWords.Images">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.243" Y="0.046" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAISAFBBBEAACCAAACAgygEBAIAACASAARAAA=</HashCode>
+      <FileName>MainMenuForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameForm1" />
+      <Property Name="Resources" />
+      <Property Name="Images" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FillWords.Program">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <AssociationLine Name="MainMenuForm" Type="FillWords.MainMenuForm" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="6.853" />
+        <Point X="8" Y="7.103" />
+        <Point X="7" Y="7.103" />
+        <Point X="7" Y="4.938" />
+        <Point X="5.128" Y="4.937" Type="JumpStart" />
+        <Point X="4.962" Y="4.938" Type="JumpEnd" />
+        <Point X="4.815" Y="4.937" Type="JumpStart" />
+        <Point X="4.648" Y="4.938" Type="JumpEnd" />
+        <Point X="4.25" Y="4.938" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.856" Y="-0.103" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAABAAgAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainMenuForm" />
+      <Property Name="Settings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FillWords.properites">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <AssociationLine Name="Mode" Type="FillWords.Mode">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.589" Y="0.029" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAQAAAAAIAAAAAAAAAQAAAAAEQBMQAAFAgAAIAAAAA=</HashCode>
+      <FileName>properites.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Mode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FillWords.Resources">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FillWords.Properties.Resources">
+    <Position X="5.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEEAAAAAAEAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FillWords.Properties.Settings">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FillWords.Mode">
+    <Position X="2.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAAAAEAA=</HashCode>
+      <FileName>properites.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
