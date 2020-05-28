@@ -13,42 +13,8 @@ using System.Data.OleDb;
 
 namespace FillWords
 {
-    public partial class GameForm : Properties.Resources
-    {
-        private Mode Pick { get; set; }
-
-        internal FWAlg FWAlg
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        internal Images Images
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        internal Resources Resources
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public Mode Mode
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
+    public partial class GameForm
+    { 
         private FWAlg fill;
         private MainMenuForm MainMenu;
         string[][] Matrix;
@@ -56,6 +22,7 @@ namespace FillWords
         int Level; // 1 - 4
         int MSize;
 
+        private Mode Pick { get; set; }
         SoundPlayer Player = new SoundPlayer(properites.Sound);
         bool Playing;
 

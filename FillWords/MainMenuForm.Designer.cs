@@ -40,6 +40,7 @@
             this.tbSwitchUser = new System.Windows.Forms.TextBox();
             this.btSaveUser = new System.Windows.Forms.Button();
             this.btCancelUser = new System.Windows.Forms.Button();
+            this.btHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbPickCategory
@@ -47,7 +48,7 @@
             this.lbPickCategory.AutoSize = true;
             this.lbPickCategory.BackColor = System.Drawing.Color.Transparent;
             this.lbPickCategory.Font = new System.Drawing.Font("soft", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPickCategory.ForeColor = System.Drawing.Color.BlueViolet;
+            this.lbPickCategory.ForeColor = System.Drawing.Color.Indigo;
             this.lbPickCategory.Location = new System.Drawing.Point(12, 230);
             this.lbPickCategory.Name = "lbPickCategory";
             this.lbPickCategory.Size = new System.Drawing.Size(446, 50);
@@ -210,6 +211,23 @@
             this.btCancelUser.Visible = false;
             this.btCancelUser.Click += new System.EventHandler(this.btCancelUser_Click);
             // 
+            // btHelp
+            // 
+            this.btHelp.BackColor = System.Drawing.Color.Transparent;
+            this.btHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btHelp.FlatAppearance.BorderSize = 3;
+            this.btHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btHelp.Font = new System.Drawing.Font("soft", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btHelp.Location = new System.Drawing.Point(21, 159);
+            this.btHelp.Name = "btHelp";
+            this.btHelp.Size = new System.Drawing.Size(147, 47);
+            this.btHelp.TabIndex = 1;
+            this.btHelp.TabStop = false;
+            this.btHelp.Text = "Справка";
+            this.btHelp.UseVisualStyleBackColor = false;
+            this.btHelp.Click += new System.EventHandler(this.btHelp_Click);
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,11 +241,13 @@
             this.Controls.Add(this.lbUserNick);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btMod4);
+            this.Controls.Add(this.btHelp);
             this.Controls.Add(this.btMod3);
             this.Controls.Add(this.btMod2);
             this.Controls.Add(this.btMod1);
             this.Controls.Add(this.lbPickCategory);
             this.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(820, 520);
@@ -254,6 +274,7 @@
         private System.Windows.Forms.TextBox tbSwitchUser;
         private System.Windows.Forms.Button btSaveUser;
         private System.Windows.Forms.Button btCancelUser;
+        private System.Windows.Forms.Button btHelp;
     }
 }
 

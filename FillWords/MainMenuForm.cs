@@ -8,7 +8,7 @@ namespace FillWords
 {
     public partial class MainMenuForm : Form
     {
-        private GameForm GameForm;
+        private Game GameForm;
         string UserNick = "Гость";
 
         //для бд
@@ -19,30 +19,6 @@ namespace FillWords
         public MainMenuForm()
         {
             InitializeComponent();
-        }
-
-        public GameForm GameForm1
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        internal Resources Resources
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        internal Images Images
-        {
-            get => default;
-            set
-            {
-            }
         }
 
         private void btMod1_Click(object sender, EventArgs e)
@@ -67,7 +43,7 @@ namespace FillWords
 
         private void ShowGameForm(Mode pick)
         {
-            GameForm = new GameForm(pick, this, UserNick);
+            GameForm = new Game(pick, this, UserNick);
             GameForm.Show();
             Hide();
         }
@@ -176,6 +152,11 @@ namespace FillWords
             writer.Write("lastusername=" + UserNick);
             writer.Close();
             config.Close();
+        }
+
+        private void btHelp_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("help.chm");
         }
     }
 }

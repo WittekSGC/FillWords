@@ -1,4 +1,5 @@
-﻿namespace FillWords
+﻿
+namespace FillWords
 {
     partial class GameForm
     {

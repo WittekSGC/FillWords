@@ -2,7 +2,6 @@ F:\курс 3\C#Forms\KURSACH!!!\FillWords\bin\Debug\FillWords.exe.config
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\bin\Debug\FillWords.exe
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\bin\Debug\FillWords.pdb
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.csprojAssemblyReference.cache
-F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.GameForm.resources
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.MainMenuForm.resources
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.Properties.Resources.resources
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.csproj.GenerateResource.cache
@@ -18,3 +17,4 @@ F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.exe.manifest
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\bin\Debug\FillWords.exe.manifest
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\bin\Debug\FillWords.application
 F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.application
+F:\курс 3\C#Forms\KURSACH!!!\FillWords\obj\Debug\FillWords.Game.resources

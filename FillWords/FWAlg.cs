@@ -10,7 +10,7 @@ namespace FillWords
         string[] Words;
         bool Paint;
         string PickWord;
-        GameForm Owner;
+        Game OwnerF;
 
         //цвета
         public Color EmptyCell = properites.EmptyCell; // пустой
@@ -25,12 +25,12 @@ namespace FillWords
         /// <param name="matrix">Думерный массив букв</param>
         /// <param name="words">Слова в сетке</param>
         /// <param name="size">ширина квардрата сетки</param>
-        public FWAlg(DataGridView dgv, string[][] matrix, string[] words, int size, GameForm Owner)
+        public FWAlg(DataGridView dgv, string[][] matrix, string[] words, int size, Game Owner)
         {
             Matrix = matrix;
             Words = words;
             this.dgv = dgv;
-            this.Owner = Owner;
+            this.OwnerF = Owner;
             Paint = false;
 
             dgv.RowCount = size;
@@ -59,7 +59,7 @@ namespace FillWords
                 if (PickWord == Words[i])
                 {
                     Words[i] = "cheked";
-                    Owner.TimeOnNoPlay = 0;
+                    OwnerF.TimeOnNoPlay = 0;
                     for (int j = 0; j < dgv.ColumnCount; j++)
                     {
                         for (int k = 0; k < dgv.RowCount; k++)
